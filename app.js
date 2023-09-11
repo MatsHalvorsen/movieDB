@@ -27,15 +27,16 @@ function updateView() {
 <main>
     <article>
         <div class="article-headImage article-section">
-            <img id="headImage" src="/ironMan.jpg" alt="picture of the Iron Man suite">
+            <img id="headImage" src="ironMan.jpg" alt="picture of the Iron Man suite">
         </div>
         <div class="article-imageSlider article-section">
             <div id="imageSlide">
                 <button id="pointersLeft" onclick="prevSlide()">ᐸ</button>
-                <img src="${pictures[(currentIndex + pictures.length - 1) % pictures.length]}" alt="picture of a movie">
-                <img src="${pictures[currentIndex]}" alt="picture of a movie">
-                <img src="${pictures[(currentIndex + 1) % pictures.length]}" alt="picture of a movie">
-                <img src="${pictures[(currentIndex + 2) % pictures.length]}" alt="picture of a movie">
+                <img id="slide" src="${pictures[(currentIndex + pictures.length - 1) % pictures.length]}"
+                 alt="picture of a movie">
+                <img id="slide" src="${pictures[currentIndex]}" alt="picture of a movie">
+                <img id="slide" src="${pictures[(currentIndex + 1) % pictures.length]}" alt="picture of a movie">
+                <img id="slide" src="${pictures[(currentIndex + 2) % pictures.length]}" alt="picture of a movie">
                 <button id="pointersRight" onclick="nextSlide()">ᐳ</button>
             </div>
         </div>

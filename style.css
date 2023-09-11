@@ -41,7 +41,7 @@ main > article {
 
 main > article > .article-section {
     height: 100%;
-    border: 1px solid grey;
+    border: 1px solid
 }
 
 .article-headImage {
@@ -66,4 +66,14 @@ main > article > .article-section {
 
 #pointers {
     color: white;
+}
+
+#pointersLeft, #pointersRight {
+    color:  white;
+    background-color: rgb(6, 10, 24);
+    border-style: none;
+}
+
+#slide {
+    border-radius: 5%;
 }
