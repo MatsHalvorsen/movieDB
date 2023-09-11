@@ -1,0 +1,69 @@
+body {
+    background-color: rgb(6, 10, 24);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 1rem;
+    align-content: flex-start;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    color: white;
+}
+
+.push {
+    margin-left: auto;
+}
+
+input {
+    border-radius: 10px;
+}
+
+main {
+    flex-grow: 1;
+}
+
+main > article {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+
+main > article > .article-section {
+    height: 100%;
+    border: 1px solid grey;
+}
+
+.article-headImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#headImage {
+    max-width: 100%;
+    max-width: 100%;
+}
+
+#imageSlide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    height: 350px;
+    width: auto;
+}
+
+#pointers {
+    color: white;
+}
