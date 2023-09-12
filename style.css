@@ -5,6 +5,9 @@ body {
     height: 100vh;
     margin: 0px;
 }
+nav{
+    margin-bottom: 0;
+}
 
 ul{
     display: flex;
@@ -27,6 +30,17 @@ a {
 input {
     border-radius: 10px;
 }
+
+.menu {
+    margin-bottom: 0;
+    align-items: flex-start;
+}
+
+main, .article-section {
+    margin: 0;
+    padding: 0;
+}
+
 
 main {
     flex-grow: 1;
@@ -76,4 +90,9 @@ main > article > .article-section {
 
 #slide {
     border-radius: 5%;
+}
+
+#slide:hover {
+    opacity: 0.3;
+    cursor: pointer;
 }

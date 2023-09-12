@@ -32,11 +32,13 @@ function updateView() {
         <div class="article-imageSlider article-section">
             <div id="imageSlide">
                 <button id="pointersLeft" onclick="prevSlide()">ᐸ</button>
-                <img id="slide" src="${pictures[(currentIndex + pictures.length - 1) % pictures.length]}"
+                <img id="slide" 
+                src="${pictures[(currentIndex + pictures.length - 1) % pictures.length]}"
+                
                  alt="picture of a movie">
                 <img id="slide" src="${pictures[currentIndex]}" alt="picture of a movie">
                 <img id="slide" src="${pictures[(currentIndex + 1) % pictures.length]}" alt="picture of a movie">
-                <img id="slide" src="${pictures[(currentIndex + 2) % pictures.length]}" alt="picture of a movie">
+                <img id="slide" onmouseover="hover()" src="${pictures[(currentIndex + 2) % pictures.length]}" alt="picture of a movie">
                 <button id="pointersRight" onclick="nextSlide()">ᐳ</button>
             </div>
         </div>
@@ -58,3 +60,8 @@ function prevSlide() {
     currentIndex = (currentIndex - 1 + pictures.length) % pictures.length;
     updateView();
 }
+/*
+function hover() {
+    document.getElementById('slide').style.transform = "rotateY()"
+}
+*/
